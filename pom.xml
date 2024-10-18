@@ -15,7 +15,7 @@
     </properties>
 
     <dependencies>
-        <!-- ProductoLabel.jar -->
+        <!-- ProductoLabel -->
         <dependency>
             <groupId>com.alesandro</groupId>
             <artifactId>Ejercicio15-O</artifactId>
@@ -68,6 +68,12 @@
                         <configuration>
                             <mainClass>com.alesandro.ejercicio15p/com.alesandro.ejercicio15p.ProductosApplication
                             </mainClass>
+                            <arguments>
+                                <argument>--module-path</argument>
+                                <argument>${java.home}/lib</argument>
+                                <argument>--add-modules</argument>
+                                <argument>javafx.controls,javafx.fxml</argument>
+                            </arguments>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
