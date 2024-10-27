@@ -11,4 +11,3 @@ La estructura del proyecto es la siguiente:
         - `fxml`:
             - `Productos.fxml`: Ventana principal de la aplicación
         - `images`: Imágenes de la aplicación
-        - `style`: Estilos de la aplicación
