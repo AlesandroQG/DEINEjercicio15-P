@@ -7,7 +7,7 @@ La estructura del proyecto es la siguiente:
     - `java > com.alesandro.ejercicio15p`:
         - `ProductosApplication.java`: Clase que lanza la aplicación
         - `ProductosController.java`: Clase que controla los eventos de la ventana principal de la aplicación
-    - `resources`:
+    - `resources > com.alesandro.ejercicio15p`:
         - `fxml`:
             - `Productos.fxml`: Ventana principal de la aplicación
         - `images`: Imágenes de la aplicación
