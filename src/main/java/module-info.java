@@ -1,6 +1,6 @@
 module com.alesandro.ejercicio15p {
+    requires javafx.controls;
     requires javafx.fxml;
-    requires javafx.graphics;
     requires com.alesandro.ejercicio15o;
 
 

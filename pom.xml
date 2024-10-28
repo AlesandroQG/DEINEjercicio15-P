@@ -11,7 +11,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.version>5.10.2</junit.version>
     </properties>
 
     <dependencies>
@@ -19,7 +18,7 @@
         <dependency>
             <groupId>com.alesandro</groupId>
             <artifactId>Ejercicio15-O</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>5.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -30,19 +29,6 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>22.0.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -56,33 +42,6 @@
                     <source>22</source>
                     <target>22</target>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-maven-plugin</artifactId>
-                <version>0.0.8</version>
-                <executions>
-                    <execution>
-                        <!-- Default configuration for running with: mvn clean javafx:run -->
-                        <id>default-cli</id>
-                        <configuration>
-                            <mainClass>com.alesandro.ejercicio15p/com.alesandro.ejercicio15p.ProductosApplication
-                            </mainClass>
-                            <arguments>
-                                <argument>--module-path</argument>
-                                <argument>${java.home}/lib</argument>
-                                <argument>--add-modules</argument>
-                                <argument>javafx.controls,javafx.fxml</argument>
-                            </arguments>
-                            <launcher>app</launcher>
-                            <jlinkZipName>app</jlinkZipName>
-                            <jlinkImageName>app</jlinkImageName>
-                            <noManPages>true</noManPages>
-                            <stripDebug>true</stripDebug>
-                            <noHeaderFiles>true</noHeaderFiles>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
